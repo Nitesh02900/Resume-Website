@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+     
+    }
+
+    .container {
+      width: 100%;
+      max-width: 210mm;
+      margin: 0 auto;
+      border: double;
+      background-color:antiquewhite;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+
+    .address-box {
+      padding: 10px;
+      width: 200px;
+      position: relative;
+      text-align: center;
+    }
+    .address {
+      text-align: justify;
+      text-justify: inter-word;
+      font-size:14px;
+      font-family: "Times New Roman", Times, serif;
+      
+    }
+    .picture {
+      width: 150px;
+      height: 150px;
+      
+      border-radius: 5px;
+    }
+
+    
+    .content {
+      margin: 20px;
+      border-top: 1px solid black;
+      padding-top: 20px;
+    }
+    /*.section-heading {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .qualification-line {
+      border-bottom: 2px solid red;
+      padding-right: 10px;
+      margin-right: 10px;
+      text-align: left;
+    }*/
+    .table-container {
+      margin-top: 20px;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    h2 {
+			display: flex;
+			flex-direction: row;
+		}
+    h2:after {
+			content: "";
+			flex: 1 1;
+			border-bottom: 2px solid red;
+			margin: auto;
+		}
+.Experience ul {
+            margin: 0.75em 0;
+            padding: 0 1em;
+            list-style: none;
+}
+.Experience li {
+  position: relative;
+  padding-left: 1.5em; /* Adjust the value as needed */
+}
+.Experience li::before { 
+            content: "";
+            border-color: transparent #111;
+            border-style: solid;
+            border-width: 0.35em 0 0.35em 0.45em;
+            display: block;
+            height: 0;
+            width: 0;
+            left: -1em;
+            top: 0.9em;
+            position: relative;
+}
+.add{
+  font-size:20px;
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="NITT.png" alt="College Logo" class="logo">
+      <div class="address-box">
+       
+        <div class="address">
+          <table>
+  
+             <div class="add"><b> NITESH KUMAR</b></br></div>
+              Master of Computer Applications</br>
+              Gender: Male</br>
+              Date of Birth: 15/01/1998<br>
+              E-mail: kmryuvi2017@gmail.com</br>
+              Contact: +91-8210723505
+          
+          </table>
+        </div>
+      </div>
+      <img src="NITESH_KUMAR .jpg" alt="Candidate Picture" class="picture">
+    </div>
+    <div class="content">
+        <div class="qualification-line">
+          <div class="section-heading"><h2>Educational Qualifications</h2></div>
+        </div>
+    
+        <div class="table-container">
+            <table>
+              <tr>
+                <th>Year</th>
+                <th>Degree/Examination</th>
+                <th>Institution/Board</th>
+                <th>CGPA/Percentage</th>
+              </tr>
+              <tr>
+                <td>2023</td>
+                <td>MCA</td>
+                <td>NIT, Trichy</td>
+                <td>7.26</td>
+              </tr>
+              <tr>
+                <td>2018</td>
+                <td>BCA</td>
+                <td>Maharani Janki Kunvar College Bettiah</br> Bihar</td>
+                <td>73.62%</td>
+              </tr>
+              <tr>
+                <td>2015</td>
+                <td>Class XII</td>
+                <td>Maharani Janki Kunvar College Bettiah</br> Bihar</td>
+                <td>71.80%</td>
+              </tr>
+              <tr>
+                <td>2013</td>
+                <td>Class X</td>
+                <td>Hargun High School Sarisawa</td>
+                <td>70.80%</td>
+              </tr>
+            </table>
+          </div>   
+        </br>
+          <div class="qualification-line">
+            <div class="section-heading"><h2>Academic Achievements</h2></div>
+          </div>
+          <div>
+            <ul>
+              <li>Selected in DU 2020 MCA Entrance Examination.</li>
+              <li>Selected in JNU 2020 MCA Entrance Examination.</li>
+              <li>Selected in BHU 2020 MCA Entrance Examination.</li>
+              <li>Secured Second position in Match the Tag in Inovac’21 - the inter-Department cultural fest organized by Parallel Computing Club.</li>
+            </ul>
+          </div>
+          <div class="qualification-line">
+            <div class="section-heading"><h2>Internship Experience</h2></div>
+          </div>
+          <div>
+          <b>
+          <ul>
+           <li>Summer Internship at Exposys Data Labs <span style="font-size: smaller ; float: right;">April 2023</span></li>
+            <li>E-learning Web Application (HTML, CSS, JS, PHP, MySQL)</li>
+          </ul> </b>
+          </div>
+          <div class="Experience">
+        <dl>
+          <ul>
+            <dd><li>Developed an E-learning web application where students can sign up and log into the system,</li></dd>
+            <dd><li>Students can enroll, view different-different courses and attend all the lectures added by the tutors.</li></dd>
+           <dd> <li>Tutors can add, delete and update many courses and all database connectivity is using PHP and MySQL.</li></dd>
+          </ul>
+        </dl>
+          </div>
+          <div class="qualification-line">
+            <div class="section-heading"><h2>Project</h2></div>
+          </div>
+          <div>
+          <b>
+            <ul>
+              <li>Comatose Detection System (Machine Learning, OpenCV) <span style="font-size: smaller ; float: right;">Feb 2022</span> </li>
+            </ul> </b></div>
+          <div class="Experience">
+            <dl>
+              <ul>
+                <dd><li>A detection system where we can identify a person is in a drowsy mode during a car.</li></dd>
+                <dd><li>This project includes direct working with the<b> 68 facial landmark detector </b>and also the face detector of the <b>Dlib library.</b></li></dd>
+               <dd> <li>Designed to build up a framework for driver tiredness identification to keep mishaps from happening because of driver weakness and languor.
+
+               </li></dd>
+              </ul>
+            </dl>
+              </div>
+
+              <div>
+                <b>
+                  <ul>
+                    <li>Desktop Virtual Assistant (Python & Library)   <span style="font-size: smaller ; float: right;">April 2022</span>                                                                                                        </li>
+                  </ul> </b></div>
+                <div class="Experience">
+                  <dl>
+                    <ul>
+                      <dd><li>Created Desktop Application based on <b>Artificial Intelligence</b> in Python, with the help of its module and library (Speech Recognition, pyttsx3, Beautiful Soup, and many more).  </li></dd>
+                      <dd><li>It can send text messages on your behalf, can play music, can open all IDE, can switch off or restart our system, etc.</li></dd>
+                     <dd> <li>It is capable of opening websites like Google, YouTube, Brave, etc. in a browser, and can search anything for you without typing a single word with the help of single command.    
+      
+                     </li></dd>
+                    </ul>
+                  </dl>
+                    </div>
+                    <div>
+                        <b>
+                          <ul>
+                            <li>Number Plate Detection (Python, OpenCV, TensorFlow, YOLOV5 Algorithm)  <span style="font-size: smaller ; float: right;">May 2023</span>                                                                                                        </li>                                                                                                        </li>
+                          </ul> </b></div>
+                        <div class="Experience">
+                          <dl>
+                            <ul>
+                              <dd><li>Developed a real-time deep-learning model for license plate detection using YOLOv5.</li></dd>
+                              <dd><li>Achieved 95% accuracy on a custom dataset of license plate images with other algorithms OpenCV, YOLOV5.</li></dd>
+                             <dd> <li>Integrated the model into a larger system for automatic toll collection, traffic monitoring, or other applications.</li></dd>   
+              
+                             </li></dd>
+                            </ul>
+                          </dl>
+                            </div>
+                            <div class="qualification-line">
+                                <div class="section-heading"><h2>Areas of Interest</h2></div>
+                              </div>
+                              <div>
+                                <ul>
+                                  <li>Data Structures and Algorithm</li>
+                                  <li>Database Management System</li>
+                                  <li>Operating System</li>
+                                  <li>Object Oriented Programming Concepts</li>
+                                  <li>Machine Learning</li>
+                                  <li>JAVA Full Stack Development</li>
+                                </ul>
+                              </div>
+                              <div class="qualification-line">
+                                <div class="section-heading"><h2>Technical Skills and Certifications</h2></div>
+                              </div>
+                              <div>
+                                <ul>
+                                  <li>Programming Languages     :C, C++, Python, Java</li>
+                                  <li>Web Technologies                :HTML, CSS, JavaScript, PHP</li>
+                                  <li>Database                             : MySQL</li>
+                                  <li>Certifications                        : DSA( Offered by Mysirg Online)</li>
+                                </ul>
+                              </div>
+                              <div class="qualification-line">
+                                <div class="section-heading"><h2>Positions of Responsibility</h2></div>
+                              </div>
+                              <div>
+                                <ul>
+                                  <li><b>PUBLIC RELATION COMMITTEE MEMBER IN VERSION 21</b></li>
+                                  <p>Worked as a Member of the Public Relations Committee in Version 21, as a face and voice of the institute </p>
+                                  <li><b>Member, ACM Student Chapter, Nit Trichy</b></li>
+
+                                </ul> 
+                              </div>
+                              <div class="qualification-line">
+                                <div class="section-heading"><h2>Extracurricular Activities</h2></div>
+                              </div>
+                              <div>
+                              <h4>Social Activities:</h4>
+                              <ul>
+                                <li>Taught uneducated and poor children as a <b>Volunteer</b> at my Block.</li>
+                                <li>District Volunteer in Covid-19 Pandemic.</li>
+
+                              </ul> 
+                              <h4>Cultural Activities:</h4>
+                              <ul>
+                                <li>Secured First Position in<b> District Level Singing Competition </b>Organized by M.J.K College Bettiah.</li>
+                              </ul> 
+                              </div>
+                              
+                              
+                
+  </div>
+</div>
+</body>
+</html>
